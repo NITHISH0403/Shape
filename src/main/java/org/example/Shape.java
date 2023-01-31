@@ -90,8 +90,8 @@ class Shape{
 
                 Triangle  t = new Triangle(base, height, side1, side2);
 
-                l.info("the perimeter of Triangle :" + t.perimeter());
-                l.info("the area of Triangle:" + t.area());
+                l.log(Level.INFO, () ->"the perimeter of Triangle :" + t.perimeter());
+                l.log(Level.INFO, () ->"the area of Triangle:" + t.area());
             }
             else if(ch == 2)
             {
@@ -103,8 +103,8 @@ class Shape{
 
                 Rectangle  r = new Rectangle(width, length);
 
-                l.info("the perimeter of Rectangle:" + r.perimeter());
-                l.info("the area of Rectangle:" + r.area());
+                l.log(Level.INFO, () ->"the perimeter of Rectangle:" + r.perimeter());
+                l.log(Level.INFO, () ->"the area of Rectangle:" + r.area());
             }
             else if(ch == 3)
             {
@@ -113,8 +113,8 @@ class Shape{
 
                 Circle  c = new Circle(radius);
 
-                l.info("the perimeter of Circle:" + c.perimeter());
-                l.info("the area of Circle:" + c.area());
+                l.log(Level.INFO, () ->"the perimeter of Circle:" + c.perimeter());
+                l.log(Level.INFO, () ->"the area of Circle:" + c.area());
             }
             else
             {
