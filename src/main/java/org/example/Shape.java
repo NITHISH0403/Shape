@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.logging.*;
 import java.util.*;
-import java.lang.*;
 
 class Triangle
 {
@@ -10,7 +9,7 @@ class Triangle
     int h;
     int a;
     int c;
-    Logger l = Logger.getLogger("MY Logger");
+    Logger l = Logger.getLogger("com.api.jar");
     Triangle(int base, int height, int side1, int side2)
     {
         b = base;
@@ -32,7 +31,7 @@ class Rectangle
 {
     int b;
     int l;
-    Logger l1 = Logger.getLogger("MY Logger");
+    Logger l1 = Logger.getLogger("com.api.jar");
     Rectangle(int width, int length)
     {
         b = width;
@@ -51,7 +50,7 @@ class Rectangle
 class Circle
 {
     int r;
-    Logger l = Logger.getLogger("MY Logger");
+    Logger l = Logger.getLogger("com.api.jar");
     Circle(int radius)
     {
         r = radius;
@@ -69,7 +68,7 @@ class Circle
 class Shape{
     public static void main (String[] args)
     {
-        Logger l = Logger.getLogger("MY Logger");
+        Logger l = Logger.getLogger("com.api.jar");
         Scanner s = new Scanner(System.in);
         while(true)
         {
@@ -91,8 +90,8 @@ class Shape{
 
                 Triangle  t = new Triangle(base, height, side1, side2);
 
-                l.info("the perimeter :" + t.perimeter());
-                l.info("the area :" + t.area());
+                l.info("the perimeter of Triangle :" + t.perimeter());
+                l.info("the area of Triangle:" + t.area());
             }
             else if(ch == 2)
             {
@@ -104,8 +103,8 @@ class Shape{
 
                 Rectangle  r = new Rectangle(width, length);
 
-                l.info("the perimeter :" + r.perimeter());
-                l.info("the area :" + r.area());
+                l.info("the perimeter of Rectangle:" + r.perimeter());
+                l.info("the area of Rectangle:" + r.area());
             }
             else if(ch == 3)
             {
@@ -114,8 +113,8 @@ class Shape{
 
                 Circle  c = new Circle(radius);
 
-                l.info("the perimeter :" + c.perimeter());
-                l.info("the area :" + c.area());
+                l.info("the perimeter of Circle:" + c.perimeter());
+                l.info("the area of Circle:" + c.area());
             }
             else
             {
