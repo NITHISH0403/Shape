@@ -9,7 +9,7 @@ class Triangle
     int h;
     int a;
     int c;
-    String mylogger = "com.api.jar";
+   
     Logger l = Logger.getLogger(mylogger);
     Triangle(int base, int height, int side1, int side2)
     {
@@ -32,7 +32,7 @@ class Rectangle
 {
     int b;
     int l;
-    String mylogger = "com.api.jar";
+   
     Logger l1 = Logger.getLogger(mylogger);
     Rectangle(int width, int length)
     {
@@ -52,7 +52,6 @@ class Rectangle
 class Circle
 {
     int r;
-    String mylogger = "com.api.jar";
     Logger l = Logger.getLogger(mylogger);
     Circle(int radius)
     {
@@ -71,7 +70,7 @@ class Circle
 class Shape{
     public static void main (String[] args)
     {
-        String mylogger = "com.api.jar";
+        public static final String mylogger = "com.api.jar";
         Logger l = Logger.getLogger(mylogger);
         Scanner s = new Scanner(System.in);
         while(true)
